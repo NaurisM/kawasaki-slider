@@ -1,0 +1,266 @@
+body {
+   margin: 0;
+   font-family: 'Roboto Condensed', sans-serif;
+   color: #fff;
+}
+
+*, *:before, *:after {
+   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+}
+
+.page {
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   height: 100vh;
+   background: url("../img/background.jpg") center no-repeat;
+   background-size: cover; 
+}
+
+.container {
+   width: 100%;
+   max-width: 1180px;  
+   margin: 0 auto;
+}
+
+.header__inner {
+   margin-bottom: 40px;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   padding-top: 35px;
+}
+
+.nav {
+   display: flex;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.nav__link {
+   margin-left: 40px;
+   font-size: 12px;
+   color: #fff;
+   text-decoration: none;
+   opacity: 1;
+   transition: color .3s linear;
+}
+
+.nav__link:first-child {
+   margin-left: 0;
+}
+
+.nav__link:hover {
+   color: #5D6061;
+}
+
+.first__inner {
+   display: flex;
+   height: 466px;
+   background: url("../img/moto_01.png") left no-repeat;
+}
+
+.second {
+   margin-top: auto;
+   display: flex;
+   flex-direction: column;
+   background: url("../img/moto_02.png") right no-repeat;
+}
+
+.third {
+   margin-top: auto;
+   display: flex;
+   flex-direction: column;
+   background: url("../img/moto_03.png") bottom no-repeat;
+}
+
+sup {
+   position: relative;
+   top: -1px;
+   padding: 0 2px;
+   font-size: 10px;
+   text-transform: uppercase;
+}
+
+.first__content {
+   width: 400px;
+   margin-top: 60px;
+   margin-left: 70%;
+}
+
+.second__content {
+   width: 400px;
+   margin-top: 60px;
+}
+
+.third__content {
+   width: 790px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.content__title {
+   margin-bottom: 20px;
+   font-size: 28px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #64D130;
+}
+
+.content__subtitle {
+   margin-bottom: 12px;
+   font-size: 16px;
+   font-weight: 700;
+   color: #fff;
+   text-transform: uppercase;
+}
+
+.content__text {
+   margin-bottom: 20px;
+   font-size: 13px;
+   font-weight: 400;
+   color: #fff;
+   line-height: 1.4;
+}
+
+.content__link {
+   display: block;
+   margin-bottom: 100px;
+   font-size: 14px;
+   font-weight: 700;
+   color: #64D130;
+   text-transform: uppercase;
+   transition: opacity .3s linear;
+}
+
+.content__link:hover {
+   opacity: .7;
+}
+
+.discover {
+   margin-bottom: 250px;
+}
+
+.footer {
+   margin-top: auto;
+}
+
+.footer__inner {
+   padding-bottom: 30px;
+}
+
+.center {
+   text-align: center;
+}
+
+.footer__link {
+   margin-right: 10px;
+   font-size: 12px;
+   color: #5D6061;
+   text-decoration: none;
+   transition: color .3s linear;
+}
+
+.footer__link:hover {
+   color: #fff;
+}
+
+ul {
+   list-style: none;
+   font-size: 11px;
+   font-weight: 300;
+   padding: 0;
+   padding-left: 20px;
+   line-height: 1.5;
+}
+
+li {
+   width: 300px;
+   margin-bottom: 10px;
+}
+
+span {
+   font-size: inherit;
+   text-transform: uppercase;
+   font-weight: 400;
+   color: #64D130;
+}
+
+.slick-list{
+   overflow: hidden;
+}
+
+.slick-track{
+   display: flex;
+}
+
+.slider {
+   position: relative;
+}
+
+.slider .slick-arrow {
+   position: absolute;
+   bottom: 56px;
+   right: 100px;
+   z-index: 3;
+   font-size: 0;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   border: 2px solid #64D130;
+   cursor: pointer;
+   outline: none;
+}
+
+.slider .slick-arrow.slick-prev {
+   right: 135px;
+   background: #64D130 url("../img/prev.png") center center no-repeat;
+   z-index: 5;
+   transition: opacity .3s linear;
+}
+
+.slider .slick-arrow.slick-next {
+   background: #64D130 url("../img/next.png") center center no-repeat;
+   z-index: 5;
+   transition: opacity .3s linear;
+}
+
+.slider .slick-arrow.slick-prev:hover,
+.slider .slick-arrow.slick-next:hover {
+   opacity: .7;
+}
+
+.slider .slick-dots {
+   position: absolute;
+   top: 30%;
+   left: 0;
+}
+
+.slider .slick-dots li {
+   list-style: none;
+}
+
+.slider .slick-dots button {
+   padding: 0;
+   font-size: 0;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border: 2px solid #64D130;
+   background-color: transparent;
+   outline: none;
+}
+
+.slider .slick-dots li.slick-active button {
+   background-color: #64D130;
+}
+
+.slider__item {
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
